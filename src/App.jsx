@@ -1,9 +1,12 @@
 import AppLayout from "./AppLayout";
+import { PagesProvider } from "./contexts/PageContext";
 
 function App() {
   return (
     <>
-      <AppLayout />
+      <PagesProvider>
+        <AppLayout />
+      </PagesProvider>
     </>
   );
 }
