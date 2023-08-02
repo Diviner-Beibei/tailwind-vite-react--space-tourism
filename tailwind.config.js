@@ -36,6 +36,7 @@ export default {
       },
       colors: {
         'primary': "#D0D6F9",
+        'divide-color': '#383B4B',
       },
       height: {
         screen: '100dvh',

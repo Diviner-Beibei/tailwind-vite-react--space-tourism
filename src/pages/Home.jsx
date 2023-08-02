@@ -1,6 +1,6 @@
 function Home() {
   return (
-    <div className="flex max-w-md flex-col items-center justify-center px-2 text-center">
+    <div className="mt-14 flex max-w-md flex-col items-center justify-center px-2 text-center md:mt-24 ">
       <p className="font-barlow-condensed text-base font-semibold uppercase tracking-small text-primary md:text-xl md:tracking-medium">
         So, you want to travel to
       </p>

@@ -33,15 +33,20 @@ function AppLayout() {
     }
   }
   //container relative bg-mobile-homebg md:bg-tablet-homebg lg:bg-desktop-homebg
-  const style = `container relative ${getPageBg()}`;
+  //container relative bg-mobile-destinationbg md:bg-tablet-destinationbg lg:bg-desktop-destinationbg
+  //container relative bg-mobile-crewbg md:bg-tablet-crewbg lg:bg-desktop-crewbg
+  let style = `container relative ${getPageBg()}`;
 
-  console.log(style);
+  // console.log(style);
+
+  style =
+    "container relative bg-mobile-crewbg md:bg-tablet-crewbg lg:bg-desktop-crewbg";
   return (
     <main className={style}>
       <NavBar openMenu={switchMenu} />
       {menuOpen && <Menu closeMenu={switchMenu} goPage={switchPage} />}
 
-      <div className="mt-14 grid items-center justify-center md:mt-24">
+      <div className="grid items-center justify-center ">
         {curPage === "home" && <Home />}
         {curPage === "destination" && <Destination />}
         {curPage === "crew" && <Crew />}
