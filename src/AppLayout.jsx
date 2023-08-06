@@ -25,6 +25,15 @@ function AppLayout() {
     const node = e.target.closest(".page-btn");
 
     if (node) {
+      if (node.classList.contains("border-b-2")) return;
+      const parentNode = e.target.closest(".nav-list");
+      if (parentNode) {
+        for (let i = 0; i < parentNode.children.length; i++) {
+          parentNode.children[i].classList.remove("border-b-2");
+        }
+        e.target.classList.add("border-b-2");
+      }
+
       const pageName = node.textContent.split(" ")[1].toLowerCase();
       goPage(pageName);
 
@@ -33,16 +42,15 @@ function AppLayout() {
       console.log(node.textContent, pageName);
     }
   }
-  //container relative bg-mobile-homebg md:bg-tablet-homebg lg:bg-desktop-homebg
-  //container relative bg-mobile-destinationbg md:bg-tablet-destinationbg lg:bg-desktop-destinationbg
-  //container relative bg-mobile-crewbg md:bg-tablet-crewbg lg:bg-desktop-crewbg
-  //container relative bg-mobile-technologybg md:bg-tablet-technologybg lg:bg-desktop-technologybg
-  let style = `container relative ${getPageBg()}`;
+  //relative bg-mobile-homebg md:bg-tablet-homebg lg:bg-desktop-homebg
+  //relative bg-mobile-destinationbg md:bg-tablet-destinationbg lg:bg-desktop-destinationbg
+  //relative bg-mobile-crewbg md:bg-tablet-crewbg lg:bg-desktop-crewbg
+  //relative bg-mobile-technologybg md:bg-tablet-technologybg lg:bg-desktop-technologybg
+  let style = `relative bg-cover bg-center ${getPageBg()}`;
 
   // console.log(style);
 
-  style =
-    "relative bg-mobile-technologybg md:bg-tablet-technologybg lg:bg-desktop-technologybg";
+  // style = "relative bg-mobile-homebg md:bg-tablet-homebg lg:bg-desktop-homebg";
   return (
     <main className={style}>
       <NavBar openMenu={switchMenu} goPage={switchPage} />

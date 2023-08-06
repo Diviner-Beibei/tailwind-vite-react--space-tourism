@@ -14,7 +14,7 @@ function Home() {
   }
 
   return (
-    <div className="mt-14 flex max-w-md flex-col items-center justify-center px-2 text-center md:mt-24 lg:max-w-full lg:flex-row lg:gap-40">
+    <div className="mt-14 flex max-w-md flex-col items-center justify-center px-2 text-center md:mt-24 lg:max-w-full lg:flex-row lg:gap-48">
       <div className="lg:max-w-[450px]">
         <p className="font-barlow-condensed text-base font-semibold uppercase tracking-small text-primary md:text-xl md:tracking-medium lg:text-3xl lg:tracking-big">
           So, you want to travel to

@@ -7,7 +7,7 @@ Menu.propTypes = {
 function Menu({ closeMenu, goPage }) {
   return (
     <div className="absolute right-0 top-0 h-full w-64 bg-menubg">
-      <button className="absolute right-6 top-9" onClick={closeMenu}>
+      <button className="absolute right-8 top-11" onClick={closeMenu}>
         <img src="./shared/icon-close.svg" alt="menu close" />
       </button>
       <ul
