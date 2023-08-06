@@ -48,7 +48,7 @@ function AppLayout() {
       <NavBar openMenu={switchMenu} goPage={switchPage} />
       {menuOpen && <Menu closeMenu={switchMenu} goPage={switchPage} />}
 
-      <div className="grid items-center justify-center ">
+      <div className="grid items-center justify-center lg:ml-32 lg:justify-start">
         {curPage === "home" && <Home />}
         {curPage === "destination" && <Destination />}
         {curPage === "crew" && <Crew />}
