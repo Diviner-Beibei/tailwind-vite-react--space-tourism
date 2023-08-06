@@ -28,22 +28,24 @@ function AppLayout() {
       const pageName = node.textContent.split(" ")[1].toLowerCase();
       goPage(pageName);
 
-      setMenuOpen((menuOpen) => !menuOpen);
+      if (menuOpen) setMenuOpen((menuOpen) => !menuOpen);
+
       console.log(node.textContent, pageName);
     }
   }
   //container relative bg-mobile-homebg md:bg-tablet-homebg lg:bg-desktop-homebg
   //container relative bg-mobile-destinationbg md:bg-tablet-destinationbg lg:bg-desktop-destinationbg
   //container relative bg-mobile-crewbg md:bg-tablet-crewbg lg:bg-desktop-crewbg
+  //container relative bg-mobile-technologybg md:bg-tablet-technologybg lg:bg-desktop-technologybg
   let style = `container relative ${getPageBg()}`;
 
   // console.log(style);
 
   style =
-    "container relative bg-mobile-crewbg md:bg-tablet-crewbg lg:bg-desktop-crewbg";
+    "relative bg-mobile-technologybg md:bg-tablet-technologybg lg:bg-desktop-technologybg";
   return (
     <main className={style}>
-      <NavBar openMenu={switchMenu} />
+      <NavBar openMenu={switchMenu} goPage={switchPage} />
       {menuOpen && <Menu closeMenu={switchMenu} goPage={switchPage} />}
 
       <div className="grid items-center justify-center ">
