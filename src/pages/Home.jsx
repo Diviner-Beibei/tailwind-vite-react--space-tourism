@@ -31,7 +31,7 @@ function Home() {
       </div>
       <button
         onClick={handleExplore}
-        className="mb-8 mt-20 h-40 w-40 rounded-full  bg-white font-bellefair text-xl uppercase tracking-tiny md:mb-[5rem] md:mt-[10rem] md:h-60 md:w-60 md:text-[2rem] md:tracking-[2px] lg:mx-auto lg:h-[274px] lg:w-[274px]"
+        className="mb-8 mt-20 h-40 w-40 rounded-full  bg-white font-bellefair text-xl uppercase tracking-tiny md:mb-[5rem] md:mt-[10rem] md:h-60 md:w-60 md:text-[2rem] md:tracking-[2px] lg:h-[274px] lg:w-[274px]"
       >
         Explore
       </button>
