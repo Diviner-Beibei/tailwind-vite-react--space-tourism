@@ -2,6 +2,7 @@
   "name": "space-tourism-website",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://Diviner-Beibei.github.io/tailwind-vite-react--space-tourism",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,7 +10,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages-d build"
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -30,6 +31,5 @@
     "prettier-plugin-tailwindcss": "^0.4.1",
     "tailwindcss": "^3.3.3",
     "vite": "^4.4.5"
-  },
-  "homepage": "https://Diviner-Beibei.github.io/tailwind-vite-react--space-tourism/"
+  }
 }
