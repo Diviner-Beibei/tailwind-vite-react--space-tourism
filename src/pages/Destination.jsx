@@ -29,11 +29,11 @@ function Destination() {
   }
 
   return (
-    <div className="mt-6 flex h-full w-full flex-col items-center gap-6 px-5 pb-8 pt-4 text-center font-barlow-condensed md:mt-8 md:items-start md:gap-10 lg:gap-20 lg:px-0 lg:pr-4">
-      <p className="font-barlow-condensed text-base uppercase tracking-small text-white md:pl-6 md:text-xl lg:mt-12 lg:pl-0 lg:text-3xl lg:tracking-big">
+    <div className="flex h-full w-full flex-col items-center gap-6 px-5 pb-8 text-center font-barlow-condensed md:mt-8 md:items-start md:gap-10 lg:col-span-2 lg:mt-0 lg:gap-20 lg:px-0">
+      <p className="font-barlow-condensed text-base uppercase tracking-small text-white md:pl-6 md:text-xl lg:ml-20 lg:mt-12 lg:pl-0 lg:text-3xl lg:tracking-big">
         <span className="font-bold opacity-25">01</span> Pick your destination
       </p>
-      <div className="flex flex-col items-center gap-6 md:gap-10 lg:flex-row lg:items-start lg:gap-32">
+      <div className="flex flex-col items-center gap-6 md:gap-10 lg:w-full lg:flex-row lg:justify-around">
         <div className="md:self-center">
           <picture>
             <source srcSet={getCurText("images")["webp"]} type="image/webp" />
@@ -46,7 +46,7 @@ function Destination() {
           </picture>
         </div>
 
-        <div className="flex flex-col items-center gap-6 md:gap-10 lg:mr-auto lg:max-w-[420px] lg:text-left">
+        <div className="flex flex-col items-center gap-6 md:gap-10 lg:max-w-[420px] lg:text-left">
           <ul
             onClick={switchPlanet}
             className="planet-list flex gap-4 text-sm font-light uppercase tracking-small text-white md:gap-8 md:self-center md:text-base md:font-semibold lg:self-start lg:tracking-small"

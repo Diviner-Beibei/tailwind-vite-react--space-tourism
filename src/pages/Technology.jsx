@@ -42,7 +42,7 @@ function Technology() {
   //"./technology/image-launch-vehicle-portrait.jpg"
   //"./technology/image-launch-vehicle-landscape.jpg"
   return (
-    <div className="mt-6 flex h-full w-full flex-col items-center gap-8 pb-10 pt-4 text-center md:mt-8 md:items-start md:gap-10 lg:min-h-[700px] lg:gap-24">
+    <div className="mt-6 flex h-full w-full flex-col items-center gap-8 pb-10 pt-4 text-center md:mt-8 md:items-start md:gap-10 lg:ml-20 lg:min-h-[700px] lg:gap-24">
       <p className="font-barlow-condensed text-base uppercase tracking-small text-white md:pl-10  md:text-xl lg:mt-12 lg:pl-0 lg:text-3xl lg:tracking-big">
         <span className="font-bold opacity-25">03</span> Space launch 101
       </p>

@@ -46,7 +46,7 @@ function AppLayout() {
   //relative bg-mobile-destinationbg md:bg-tablet-destinationbg lg:bg-desktop-destinationbg
   //relative bg-mobile-crewbg md:bg-tablet-crewbg lg:bg-desktop-crewbg
   //relative bg-mobile-technologybg md:bg-tablet-technologybg lg:bg-desktop-technologybg
-  let style = `relative bg-cover bg-center ${getPageBg()}`;
+  let style = `relative bg-cover min-h-[56.25rem] bg-center ${getPageBg()}`;
 
   // console.log(style);
 
@@ -56,7 +56,8 @@ function AppLayout() {
       <NavBar openMenu={switchMenu} goPage={switchPage} />
       {menuOpen && <Menu closeMenu={switchMenu} goPage={switchPage} />}
 
-      <div className="grid items-center justify-center lg:ml-32 lg:justify-start">
+      {/* lg:ml-32 */}
+      <div className="grid items-center justify-center lg:grid-cols-2 lg:justify-start">
         {curPage === "home" && <Home />}
         {curPage === "destination" && <Destination />}
         {curPage === "crew" && <Crew />}

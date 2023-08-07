@@ -12,9 +12,9 @@ function Home() {
 
     goPage("destination");
   }
-
+  //lg:gap-48
   return (
-    <div className="mt-14 flex max-w-md flex-col items-center justify-center px-2 text-center md:mt-24 lg:max-w-full lg:flex-row lg:gap-48">
+    <div className="mt-14 flex w-full flex-col items-center justify-center px-2 text-center md:mt-24 lg:col-span-2 lg:flex-row lg:justify-around">
       <div className="lg:max-w-[450px]">
         <p className="font-barlow-condensed text-base font-semibold uppercase tracking-small text-primary md:text-xl md:tracking-medium lg:text-3xl lg:tracking-big">
           So, you want to travel to
@@ -31,7 +31,7 @@ function Home() {
       </div>
       <button
         onClick={handleExplore}
-        className="mb-8 mt-20 h-40 w-40 rounded-full  bg-white font-bellefair text-xl uppercase tracking-tiny md:mb-[5rem] md:mt-[10rem] md:h-60 md:w-60 md:text-[2rem] md:tracking-[2px] lg:h-[274px] lg:w-[274px]"
+        className="mb-8 mt-20 h-40 w-40 rounded-full  bg-white font-bellefair text-xl uppercase tracking-tiny md:mb-[5rem] md:mt-[10rem] md:h-60 md:w-60 md:text-[2rem] md:tracking-[2px] lg:h-[274px] lg:w-[274px] lg:self-end"
       >
         Explore
       </button>

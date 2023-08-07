@@ -38,7 +38,7 @@ function Crew() {
   }
 
   return (
-    <div className="mt-6 flex h-full w-full flex-col items-center gap-8 pb-10 pt-4 text-center md:mt-8 md:min-h-[60rem] md:items-start md:gap-12 lg:min-h-[45rem]">
+    <div className="mt-6 flex h-full w-full flex-col items-center gap-8 pb-10 pt-4 text-center md:mt-8 md:min-h-[60rem] md:items-start md:gap-12 lg:col-span-2 lg:ml-20 lg:min-h-[45rem] lg:gap-0">
       <p className="font-barlow-condensed text-base uppercase tracking-small text-white md:pl-10 md:text-xl lg:mt-12 lg:pl-0 lg:text-3xl lg:tracking-big">
         <span className="font-bold opacity-25">02</span> Meet your crew
       </p>
